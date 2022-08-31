@@ -1,2 +1,5 @@
 # DSW-AndresChaves
-Diseño de Sitios Web - 301122_31
+
+Nombre: Andrés Chaves Martínez
+Grupo: 301122_31
+Tutor: Mario Luis Avila Pérez
