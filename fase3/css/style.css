@@ -1,0 +1,23 @@
+.principal{
+    background-color: #6E85B7;
+    text-align: center;
+    padding: 10px;
+}
+
+.menu{
+    background-color: #B2C8DF;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: stretch;
+    align-content: space-between;
+    column-gap: 25px;
+}
+
+.lateral{
+    background-color: #000000;
+}
+
+.final{
+    background-color: #C4D7E0;
+}
