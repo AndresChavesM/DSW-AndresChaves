@@ -1,12 +1,145 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+        crossorigin="anonymous"></script>
     <title>CSS Grid</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-    
+
+    <header class="principal">
+        <h1>
+            Aprendiendo un poco sobre etiquetas semánticas y CSS Grid
+        </h1>
+    </header>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Menú</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Temas
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="etiqueta_semantica.html">Etiquetas semánticas</a></li>
+                            <li><a class="dropdown-item" href="css_grid.html">CSS Grid</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Recursos Digitales
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="mm_etiqueta_semantica.html">Media Etiqueta Semántica</a>
+                            </li>
+                            <li><a class="dropdown-item" href="mm_css_grid.html">Media CSS Grid</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Aprendizaje
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="#">Actividad 1</a></li>
+                            <li><a class="dropdown-item" href="#">Actividad 2</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Acerca de
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="about.html">Andrés Chaves Martínez</a></li>
+
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="menu">
+
+        <section>
+
+            <h3>
+                CSS Grid
+            </h3>
+            <p>
+                CSS Grid Layout es un sistema de rejilla en 2 dimensiones, creado dentro del lenguaje CSS. Es un estándar, lo que quiere decir que no se necesita nada adiconal para que el navegador web lo entienda. Para ponerlo en práctica se necesita simplemente aplicar el nuevo "display: grid" y comenzar a utilizar sus potentes propiedades y valores CSS. Con ello se puede controlar todos los aspectos imaginables de la rejilla, obteniendo lo que se nos ocurra de una manera cómoda. <br><br>
+                CSS Grid Layout es un modelo de maquetación CSS en base a una rejilla, algo que podría no parecer tan novedoso, si tenemos en cuenta que diversas librerías de CSS lo habían intentado ya. Sistemas como 960 Grid System fueron pioneros en crear una base de código CSS para que los diseñadores pudieran posicionar los elementos en una distribución de filas y columnas. El propio Bootstrap incluye entre otras cosas un sistema de rejilla.<br><br>
+                Una pregunta típica que nos hacemos al introducirnos en los sistemas de rejilla y en concreto con el nuevo estándar de CSS es ¿Dónde lo puedo aplicar? Realmente, se tiene que pensar que es CSS y por tanto se puede aplicar en todos los sitios donde utiliza actualmente código CSS.
+            </p>
+            <img src="media/cssgrid.png" alt="CSS Grid">
+            </article>
+            <br><br>
+            <article>
+                <h3>
+                    Comparación con Flexbox
+                </h3>
+                <p>
+                    Existe otro estándar para la maquetación con grandes posibilidades, llamado Flexbox. Quizás hayas comenzado a usar Flexbox, ya que lleva más tiempo con nosotros. Grid Layout va un paso más allá, ya
+                    que aplica a dos dimensiones mientras que Flexbox aplica a sólo una.<br><br>
+                    Con Flexbox sólo podías definir qué es lo que tenían que hacer los items en el eje horizontal o en el eje vertical. Cuando en el eje vertical u horizontal se terminaba el espacio, entonces los items
+                    se iban colocando dependiendo de las configuración de los atributos Flexbox. Por ejemplo, en el caso de usar flex-wrap, cuando llegaba un item que no cabía en la horizontal, se iba a la siguiente fila.
+                    Pero tú no controlas esas dos filas, los propios ítems son los que se van acomodando.<br><br>
+                    La diferencia en CSS Grid es que tienes realmente dos dimensiones. Tus casillas podrás decidir dónde quieres que se pongan, tanto en la horizontal como en la vertical, coordinando perfectamente las
+                    dimensiones de cada fila o columna, de manera global o perfectamente independiente. No necesitas hacer trucos, ni forzar que se queden sin sitio, realmente tienes el control detallado de la posición y dimensiones de cada elemento en cada eje.
+                </p>
+            </article>
+            <br>
+            <h3>
+                Bibliografia
+            </h3>
+
+            <article>
+                <p>
+                    Desarrollo Web, (febrero 2020). Qué es CSS Grid Layout. Recuperado de https://desarrolloweb.com/articulos/que-es-css-grid-layout.html
+                </p>
+            </article>
+        </section>
+
+        <aside class="lateral">
+            <a class="twitter-timeline" data-width="800" data-height="900" data-theme="dark"
+                href="https://twitter.com/UniversidadUNAD?ref_src=twsrc%5Etfw">Tweets by UniversidadUNAD</a>
+            <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </aside>
+
+    </main>
+
+    <footer class="final">
+        <p>
+            Correo electrónico: jachavezma@unadvirtual.edu.co<br>
+            Skype: andres.chaves.martinez<br>
+            Fecha de actualización: 24 de octubre de 2022
+        </p>
+    </footer>
+
 </body>
+
 </html>

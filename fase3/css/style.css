@@ -8,10 +8,11 @@
     background-color: #B2C8DF;
     display: flex;
     flex-direction: row-reverse;
-    justify-content: space-between;
+    justify-content: left;
     align-items: stretch;
     align-content: space-between;
     column-gap: 25px;
+    flex-wrap: nowrap;
 }
 
 .lateral{
@@ -20,4 +21,5 @@
 
 .final{
     background-color: #C4D7E0;
+    text-align: center;
 }
