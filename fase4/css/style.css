@@ -1,0 +1,32 @@
+.principal{
+    background-color: #6E85B7;
+    display: flex;
+	justify-content: space-between;
+	padding: 10px;
+	flex-direction: row;
+}
+
+.menu{
+    background-color: #B2C8DF;
+    display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	/*display: flex;*/
+
+}
+
+.lateral{
+    grid-column: 4/5;
+	padding: 30px;
+	justify-content: left;
+}
+
+.final{
+    background-color: #C4D7E0;
+    text-align: center;
+}
+
+@media screen and (max-width:600px) {
+	.principal{
+		flex-direction: column;
+	}
+}
